@@ -18,7 +18,7 @@ The file will have output in Tensorboard.
 ### Run the following code to load tensorboard and visilusize images and loss figures
 
 %load_ext tensorboard 
-
+\
 %tensorboard --logdir   run_reuslts_folder 
 
 ### Visulize results in tensorboard
