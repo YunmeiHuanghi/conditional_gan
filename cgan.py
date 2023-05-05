@@ -56,7 +56,6 @@ class Generator(nn.Module):
     def __init__(self, latent_dim=100, context_dim=10, output_dim=28 * 28,leaky_relu=False):
         super(Generator, self).__init__()
         
-        #self.hidden1_z = nn.Sequential(nn.Linear(latent_dim, 200), nn.Dropout(p=0.5),  nn.ReLU(), )
         self.linear=nn.Linear(latent_dim, 200)
         self.dropout =nn.Dropout(p=0.5)
         self.relu=nn.ReLU()
